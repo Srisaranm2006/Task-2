@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VaultofCodes Internship Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="image/download.png" alt="VaultofCodes Logo">
+      <h1>VaultofCodes Internship Portal</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Explore Exciting Internship Opportunities 🚀</h2>
+      <p>Gain real-world experience and enhance your skills with our certified internship programs.</p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Web Development Internship</h3>
+        <p>Build responsive, interactive websites using HTML, CSS, and JavaScript.</p>
+        <ul>
+          <li>🕒 Duration: 1 Month</li>
+          <li>💻 Type: Remote</li>
+          <li>📜 Certificate: Yes</li>
+        </ul>
+        <div class="btn-group">
+          <button class="btn view-btn" onclick="openModal('web')">View Details</button>
+          <button class="btn apply-btn" onclick="applyPopup('Web Development Internship')">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Python Development Internship</h3>
+        <p>Learn backend development, automation, and scripting with Python.</p>
+        <ul>
+          <li>🕒 Duration: 1 Month</li>
+          <li>💻 Type: Remote</li>
+          <li>📜 Certificate: Yes</li>
+        </ul>
+        <div class="btn-group">
+          <button class="btn view-btn" onclick="openModal('python')">View Details</button>
+          <button class="btn apply-btn" onclick="applyPopup('Python Development Internship')">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>AI / ML Internship</h3>
+        <p>Work on AI models and machine learning datasets for real projects.</p>
+        <ul>
+          <li>🕒 Duration: 1 Month</li>
+          <li>💻 Type: Remote</li>
+          <li>📜 Certificate: Yes</li>
+        </ul>
+        <div class="btn-group">
+          <button class="btn view-btn" onclick="openModal('ai')">View Details</button>
+          <button class="btn apply-btn" onclick="applyPopup('AI / ML Internship')">Apply Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Data Science Internship</h3>
+        <p>Analyze data, visualize insights, and build prediction models.</p>
+        <ul>
+          <li>🕒 Duration: 1 Month</li>
+          <li>💻 Type: Remote</li>
+          <li>📜 Certificate: Yes</li>
+        </ul>
+        <div class="btn-group">
+          <button class="btn view-btn" onclick="openModal('datasci')">View Details</button>
+          <button class="btn apply-btn" onclick="applyPopup('Data Science Internship')">Apply Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Details Modal -->
+  <div class="modal" id="detailsModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <!-- Apply Popup Modal -->
+  <div class="modal" id="applyModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeApplyModal()">&times;</span>
+      <h2>Application Notice</h2>
+      <p id="applyText"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Designed & Developed by <span>Srisaran M</span> 💻</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
